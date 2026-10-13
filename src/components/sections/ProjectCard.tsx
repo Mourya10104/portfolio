@@ -71,15 +71,15 @@ export default function ProjectCard({ project, index }: Props) {
     >
       <div
         ref={tiltRef}
-        className="relative flex flex-1 flex-col justify-between rounded-[24px] border-2 border-[#2f3328] bg-[#171814] px-7 py-[30px] shadow-[0_10px_30px_rgba(0,0,0,0.4)] transition-[border-color,box-shadow] duration-300 hover:border-accent hover:shadow-[0_20px_50px_rgba(216,255,62,0.16)]"
+        className="relative flex flex-1 flex-col justify-between rounded-[24px] border-2 border-[#2f3328] bg-[#171814] px-5 py-[30px] shadow-[0_10px_30px_rgba(0,0,0,0.4)] transition-[border-color,box-shadow] duration-300 hover:border-accent hover:shadow-[0_20px_50px_rgba(216,255,62,0.16)] min-[641px]:px-7"
       >
         <div
           aria-hidden="true"
           className="pointer-events-none absolute -right-10 -top-10 h-[140px] w-[140px] rounded-full bg-[radial-gradient(circle,rgba(216,255,62,0.15)_0%,transparent_70%)]"
         />
         <div>
-          <div className="mb-4 flex items-center justify-between">
-            <span className="rounded-lg bg-accent px-2.5 py-1 font-mono text-[11.5px] font-bold tracking-[0.5px] text-black">
+          <div className="mb-4 flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
+            <span className="whitespace-nowrap rounded-lg bg-accent px-2.5 py-1 font-mono text-[11.5px] font-bold tracking-[0.5px] text-black">
               {`${num} // ${project.category}`}
             </span>
             <span className="font-mono text-[11.5px] font-semibold text-muted-light">{project.period}</span>

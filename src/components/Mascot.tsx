@@ -29,7 +29,7 @@ export default function Mascot() {
     <div
       ref={ref}
       aria-hidden="true"
-      className="pointer-events-none fixed right-[4vw] top-[14vh] z-[90] h-[90px] w-[70px] origin-center"
+      className="pointer-events-none fixed right-[4vw] top-[14vh] z-[90] h-[60px] w-[47px] origin-center min-[640px]:h-[90px] min-[640px]:w-[70px]"
     >
       <svg
         viewBox="0 0 100 120"

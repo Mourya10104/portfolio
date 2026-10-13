@@ -39,7 +39,7 @@ export default function HeroDoodles() {
       ref={ref}
       aria-hidden="true"
       focusable="false"
-      className="pointer-events-none absolute inset-0 z-[1] h-auto w-full opacity-[0.85]"
+      className="pointer-events-none absolute -left-[7.5%] top-0 z-[1] h-auto w-[115%] max-w-none opacity-[0.85] min-[768px]:left-0 min-[768px]:w-full"
       viewBox="0 0 1200 800"
       fill="none"
       stroke="#000"
