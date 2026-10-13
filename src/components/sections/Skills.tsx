@@ -4,6 +4,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
+      data-surface="light"
       aria-labelledby="skills-title"
       className="relative z-30 rounded-t-[44px] bg-bg px-5 py-20 text-text min-[801px]:px-12 min-[801px]:py-[120px]"
     >

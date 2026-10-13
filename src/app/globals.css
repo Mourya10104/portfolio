@@ -44,6 +44,11 @@
     outline: 3px solid var(--cyan);
     outline-offset: 3px;
   }
+
+  /* Cyan is only 1.39:1 on the light background; use the dark text token there (17.3:1). */
+  [data-surface="light"] :focus-visible {
+    outline-color: var(--text);
+  }
 }
 
 /* Lenis recommended base styles */

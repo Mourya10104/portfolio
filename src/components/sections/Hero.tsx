@@ -5,6 +5,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
+      data-surface="light"
       aria-labelledby="hero-title"
       className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-bg px-6 pb-20 pt-[120px] text-center"
     >
