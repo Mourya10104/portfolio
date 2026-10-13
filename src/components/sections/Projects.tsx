@@ -85,10 +85,9 @@ export default function Projects() {
 
       <div
         ref={wrapperRef}
-        data-lenis-prevent
         role="region"
         aria-label="Selected projects"
-        className="relative w-full cursor-grab snap-x snap-mandatory overflow-x-auto overflow-y-hidden scroll-smooth pb-9 pt-2.5 [-webkit-overflow-scrolling:touch] [scrollbar-width:none] data-[dragging=true]:cursor-grabbing data-[dragging=true]:snap-none data-[dragging=true]:scroll-auto [&::-webkit-scrollbar]:hidden"
+        className="relative w-full cursor-grab snap-x snap-mandatory overflow-x-auto overflow-y-hidden overscroll-x-contain pb-9 pt-2.5 [scrollbar-width:none] data-[busy=true]:snap-none data-[dragging=true]:cursor-grabbing data-[dragging=true]:snap-none [&::-webkit-scrollbar]:hidden"
       >
         <ul ref={trackRef} className="flex w-max gap-8 px-5 py-2.5 min-[801px]:px-12">
           {projects.map((project, i) => (

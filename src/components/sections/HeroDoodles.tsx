@@ -9,13 +9,16 @@ export default function HeroDoodles() {
 
   useGSAP(
     () => {
+      // Selector strings in a scoped context resolve inside the scope, so pass the hero element itself.
+      const hero = ref.current?.closest("section");
+      if (!hero) return;
       const mm = gsap.matchMedia();
       mm.add(MOTION_OK, () => {
         gsap.utils.toArray<SVGElement>(".floating-doodle").forEach((doodle) => {
           const speed = parseFloat(doodle.getAttribute("data-speed") ?? "") || 1;
           gsap.to(doodle, {
             scrollTrigger: {
-              trigger: "#hero",
+              trigger: hero,
               start: "top top",
               end: "bottom top",
               scrub: true,
