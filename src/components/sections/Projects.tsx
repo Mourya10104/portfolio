@@ -35,7 +35,7 @@ export default function Projects() {
                 key={project.title}
                 type="button"
                 onClick={() => goTo(i)}
-                aria-label={`Go to project ${i + 1}: ${project.title}`}
+                aria-label={`${String(i + 1).padStart(2, "0")}: ${project.title}`}
                 aria-current={active === i ? "true" : undefined}
                 className={`rounded-[20px] px-3.5 py-1.5 font-mono text-[13px] font-bold transition-all duration-200 hover:bg-accent hover:text-black hover:shadow-[0_0_10px_rgba(216,255,62,0.4)] ${
                   active === i
@@ -86,6 +86,7 @@ export default function Projects() {
       <div
         ref={wrapperRef}
         role="region"
+        tabIndex={0}
         aria-label="Selected projects"
         className="relative w-full cursor-grab snap-x snap-mandatory overflow-x-auto overflow-y-hidden overscroll-x-contain pb-9 pt-2.5 [scrollbar-width:none] data-[busy=true]:snap-none data-[dragging=true]:cursor-grabbing data-[dragging=true]:snap-none [&::-webkit-scrollbar]:hidden"
       >

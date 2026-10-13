@@ -7,7 +7,7 @@ export default function Topbar() {
     <header className="fixed left-0 top-0 z-[100] flex w-full items-center justify-between px-5 py-[18px] text-white mix-blend-exclusion min-[801px]:px-12 min-[801px]:py-[22px]">
       <a
         href="#hero"
-        aria-label={`${site.name} — back to top`}
+        aria-label={`${site.logo} — back to top`}
         className="rounded-[10px] border-[2.5px] border-white bg-black/15 px-2.5 py-1 font-disp text-[20px] font-bold tracking-[-1px] backdrop-blur-[8px]"
       >
         {site.logo}
