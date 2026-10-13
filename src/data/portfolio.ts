@@ -15,8 +15,9 @@ export const site = {
   title: "Penmetsa Mourya Varma — Data Engineer & Full-Stack Developer",
   description:
     "Portfolio of Penmetsa Mourya Varma, a Data Engineer and Full-Stack Developer in Hyderabad specializing in data pipelines, time-series modeling, REST APIs and AI integrations.",
-  // TODO: set the deployed URL (used for Open Graph / canonical metadata)
-  url: "https://example.com",
+  // TODO: set NEXT_PUBLIC_SITE_URL (e.g. in Vercel) or replace the fallback with the deployed URL.
+  // Used for canonical, Open Graph, sitemap and robots.
+  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com").replace(/\/$/, ""),
   location: "Hyderabad, India",
   github: "https://github.com/Mourya10104",
   email: "mouryavarma10104@gmail.com",
