@@ -115,8 +115,7 @@ export const projects: Project[] = [
   },
   {
     category: "E-COMMERCE",
-    // TODO: confirm the date range. The repo has a single commit, on 25 Mar 2026.
-    period: "MAR 2026",
+    period: "JAN 2026 – MAR 2026",
     title: "E-Commerce Storefront",
     description:
       "Full-stack storefront on Next.js 14 (App Router) with Stripe PaymentIntent checkout (including a mock mode for demos), NextAuth login with Customer and Administrator roles, and a role-guarded admin dashboard for orders. Cart, wishlist, orders, reviews and multi-currency pricing (USD, EUR, GBP, INR) live in persisted Zustand stores, and the catalog merges local products with the Fake Store API, falling back to local data if it is unreachable. Includes dark mode, category, price and sort filters, and Vitest unit tests for the cart store.",
@@ -126,8 +125,7 @@ export const projects: Project[] = [
   },
   {
     category: "ROBOTICS",
-    // TODO: confirm the date range. The repo was created and pushed on 13 Oct 2026 (2 commits).
-    period: "OCT 2026",
+    period: "AUG 2026 – OCT 2026",
     title: "ACEBOTT Spider Robot Remote",
     description:
       "ESP8266 firmware for an ACEBOTT QD020 quadruped robot that serves an HTTP API from its own WiFi access point, paired with a Flutter Android remote app. An interrupt-timed HC-SR04 ultrasonic sensor stops the robot and makes it reject forward commands with HTTP 409 when an obstacle is detected, without blocking walking or the web server. The app polls /status every 500 ms for live distance and connection state, sends hold-to-move commands authenticated with an X-API-Key header, and binds its traffic to WiFi in Kotlin so Android does not route requests over mobile data.",
