@@ -61,7 +61,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 
   return (
     <html lang="en">
-      <body className={`${fonts} font-body antialiased`}>{children}</body>
+      <body className={`${fonts} font-body antialiased`} suppressHydrationWarning>{children}</body>
     </html>
   );
 }

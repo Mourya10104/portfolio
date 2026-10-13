@@ -3,6 +3,7 @@ import Mascot from "@/components/Mascot";
 import SmoothScroll from "@/components/SmoothScroll";
 import Topbar from "@/components/Topbar";
 import Hero from "@/components/sections/Hero";
+import Experience from "@/components/sections/Experience";
 import Marquee from "@/components/sections/Marquee";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <main id="main">
         <Hero />
         <Marquee />
+        <Experience />
       </main>
     </>
   );
