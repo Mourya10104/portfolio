@@ -148,7 +148,10 @@ export function useProjectSlider(count: number) {
       const idx = targetRef.current ?? nearestIndex(destRef.current ?? wrapper.scrollLeft);
       let j = idx + dir;
       while (j >= 0 && j < stops.length && Math.abs(stops[j] - stops[idx]) < 1) j += dir;
-      if (j >= 0 && j < stops.length) goTo(j);
+      if (j < 0 || j >= stops.length) return;
+      // Several cards can share the end position; land on the last one so arrows agree with wheel/drag/bar.
+      while (j + 1 < stops.length && dir === 1 && Math.abs(stops[j + 1] - stops[j]) < 1) j += 1;
+      goTo(j);
     },
     [getStops, goTo, nearestIndex],
   );

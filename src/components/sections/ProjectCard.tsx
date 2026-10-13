@@ -99,14 +99,14 @@ export default function ProjectCard({ project, index }: Props) {
             ))}
           </ul>
         </div>
-        <div className="mt-3.5 flex items-center justify-between gap-3 border-t border-white/10 pt-[18px]">
+        <div className="mt-3.5 flex flex-wrap items-center justify-between gap-x-3 gap-y-2 border-t border-white/10 pt-[18px]">
           {project.repoUrl && (
             <a
               href={project.repoUrl}
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`View repository for ${project.title} (opens in a new tab)`}
-              className="z-10 inline-flex items-center gap-1.5 rounded-[30px] border-[1.5px] border-black bg-accent px-[18px] py-2 font-disp text-[13px] font-bold text-black shadow-[2px_2px_0_#000] transition duration-200 hover:-translate-x-0.5 hover:-translate-y-0.5 hover:bg-white hover:shadow-[4px_4px_0_var(--accent)]"
+              className="z-10 inline-flex items-center gap-1.5 whitespace-nowrap rounded-[30px] border-[1.5px] border-black bg-accent px-[18px] py-2 font-disp text-[13px] font-bold text-black shadow-[2px_2px_0_#000] transition duration-200 hover:-translate-x-0.5 hover:-translate-y-0.5 hover:bg-white hover:shadow-[4px_4px_0_var(--accent)]"
             >
               <span>VIEW REPOSITORY</span>
               <span aria-hidden="true">↗</span>

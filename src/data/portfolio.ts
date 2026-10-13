@@ -51,8 +51,10 @@ export const marqueeItems: string[] = [
   "MONGODB",
   "NEXT.JS 14",
   "REACT",
+  "FLUTTER",
   "AWS S3",
   "DOCKER",
+  "ESP8266",
   "ETL PIPELINES",
 ];
 
@@ -99,7 +101,7 @@ export const projects: Project[] = [
       "End-to-end data platform parsing 1,000+ live BMRS API records to model and visualize UK wind energy generation trends. Engineered a Forecast Horizon Filter and statistical MAE/P95 metrics suite, cutting query retrieval times by 40% across 5+ resilient REST endpoints.",
     tags: ["Python", "FastAPI", "React.js", "MySQL", "BMRS API"],
     kind: "DATA PIPELINE",
-    repoUrl: "", // TODO: add repository URL
+    repoUrl: "https://github.com/Mourya10104/reint-ai-forecast-monitor",
   },
   {
     category: "GEN-AI",
@@ -109,27 +111,29 @@ export const projects: Project[] = [
       "Leveraged Google Gemini Flash API with prompt-engineered JSON output to generate ATS-optimized resumes. Implemented real-time token streaming via Vercel AI SDK to cut perceived UI latency from 12s to sub-second updates, backed by server-side Zod schema validation.",
     tags: ["Next.js 14", "TypeScript", "Gemini API", "Vercel AI SDK", "Zod"],
     kind: "FULL-STACK • AI",
-    repoUrl: "", // TODO: add repository URL
+    repoUrl: "https://github.com/Mourya10104/ai-resume-builder",
   },
   {
-    category: "CV & ML",
-    period: "OCT 2024 – NOV 2024",
-    title: "Hands-Free Virtual Mouse",
+    category: "E-COMMERCE",
+    // TODO: confirm the date range. The repo has a single commit, on 25 Mar 2026.
+    period: "MAR 2026",
+    title: "E-Commerce Storefront",
     description:
-      "Engineered a real-time computer vision pipeline mapping 21 hand landmarks to OS-level mouse events via webcam streams. Optimized frame processing rates and landmark detection thresholds for zero-latency cursor tracking.",
-    tags: ["Python", "OpenCV", "MediaPipe", "PyAutoGUI"],
-    kind: "COMPUTER VISION",
-    repoUrl: "", // TODO: add repository URL
+      "Full-stack storefront on Next.js 14 (App Router) with Stripe PaymentIntent checkout (including a mock mode for demos), NextAuth login with Customer and Administrator roles, and a role-guarded admin dashboard for orders. Cart, wishlist, orders, reviews and multi-currency pricing (USD, EUR, GBP, INR) live in persisted Zustand stores, and the catalog merges local products with the Fake Store API, falling back to local data if it is unreachable. Includes dark mode, category, price and sort filters, and Vitest unit tests for the cart store.",
+    tags: ["Next.js 14", "TypeScript", "Stripe", "NextAuth", "Zustand"],
+    kind: "FULL-STACK • E-COMMERCE",
+    repoUrl: "https://github.com/Mourya10104/E-Commerce-Storefront-",
   },
   {
-    category: "BACKEND",
-    period: "JUL 2024 – SEP 2024",
-    title: "Hotel Reservation System",
+    category: "ROBOTICS",
+    // TODO: confirm the date range. The repo was created and pushed on 13 Oct 2026 (2 commits).
+    period: "OCT 2026",
+    title: "ACEBOTT Spider Robot Remote",
     description:
-      "Architected a concurrent booking backend featuring JWT authentication, automated email triggers, and synchronized MongoDB/MySQL transactional workflows across 8+ validated REST endpoints.",
-    tags: ["Node.js", "Express.js", "MongoDB", "JWT Auth"],
-    kind: "ENTERPRISE BACKEND",
-    repoUrl: "", // TODO: add repository URL
+      "ESP8266 firmware for an ACEBOTT QD020 quadruped robot that serves an HTTP API from its own WiFi access point, paired with a Flutter Android remote app. An interrupt-timed HC-SR04 ultrasonic sensor stops the robot and makes it reject forward commands with HTTP 409 when an obstacle is detected, without blocking walking or the web server. The app polls /status every 500 ms for live distance and connection state, sends hold-to-move commands authenticated with an X-API-Key header, and binds its traffic to WiFi in Kotlin so Android does not route requests over mobile data.",
+    tags: ["C++", "ESP8266", "Flutter", "Dart", "HC-SR04"],
+    kind: "EMBEDDED • MOBILE",
+    repoUrl: "https://github.com/Mourya10104/acebot-spider-remote",
   },
 ];
 
@@ -141,12 +145,12 @@ export const skillsIntro = {
 export const skills: SkillGroup[] = [
   {
     category: "Programming",
-    skills: "Python, SQL, JavaScript (ES6+), TypeScript, Java, C, HTML5, CSS3",
+    skills: "Python, SQL, JavaScript (ES6+), TypeScript, Java, C, C++, HTML5, CSS3",
   },
   {
     category: "Data & Backend",
     skills:
-      "FastAPI, Node.js, Express.js, Django, REST APIs, ETL Pipelines, Data Modeling, Query Optimization",
+      "FastAPI, Node.js, Express.js, Django, REST APIs, Stripe, ETL Pipelines, Data Modeling, Query Optimization",
   },
   {
     category: "Databases & Cloud",
@@ -154,11 +158,15 @@ export const skills: SkillGroup[] = [
   },
   {
     category: "Frontend & UI",
-    skills: "React.js, Next.js 14, Tailwind CSS, Responsive UI Design",
+    skills: "React.js, Next.js 14, Tailwind CSS, Zustand, Responsive UI Design",
   },
   {
     category: "AI/ML & Tools",
     skills: "Google Gemini API, Vercel AI SDK, OpenCV, MediaPipe, Git, GitHub, Zod, JWT",
+  },
+  {
+    category: "Mobile & Embedded",
+    skills: "Flutter, Dart, ESP8266",
   },
 ];
 
