@@ -1,4 +1,5 @@
 import { nav, site } from "@/data/portfolio";
+import MobileMenu from "./MobileMenu";
 
 /** Fixed top navigation (blends with whatever section is underneath). */
 export default function Topbar() {
@@ -27,10 +28,11 @@ export default function Topbar() {
         href={site.github}
         target="_blank"
         rel="noopener noreferrer"
-        className="rounded-[40px] bg-white px-5 py-[9px] font-disp text-[13px] font-bold text-black transition duration-200 hover:scale-105 hover:bg-accent"
+        className="rounded-[40px] bg-white px-5 py-[9px] font-disp text-[13px] font-bold text-black transition duration-200 hover:scale-105 hover:bg-accent max-[800px]:hidden"
       >
         GITHUB ↗<span className="sr-only"> (opens in a new tab)</span>
       </a>
+      <MobileMenu />
     </header>
   );
 }

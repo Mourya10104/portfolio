@@ -30,6 +30,9 @@ export const nav: NavLink[] = [
   { label: "Education", href: "#education" },
 ];
 
+/** Links shown in the full-screen phone menu (desktop nav plus Contact). */
+export const mobileNav: NavLink[] = [...nav, { label: "Contact", href: "#contact" }];
+
 export const hero = {
   badge: "DATA ENGINEER & FULL-STACK DEVELOPER",
   titleLines: ["PENMETSA", "MOURYA VARMA"],

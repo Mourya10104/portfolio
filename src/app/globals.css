@@ -54,6 +54,9 @@ html.lenis body {
 .lenis.lenis-smooth {
   scroll-behavior: auto !important;
 }
+html.menu-open {
+  overflow: hidden;
+}
 .lenis.lenis-stopped {
   overflow: hidden;
 }
