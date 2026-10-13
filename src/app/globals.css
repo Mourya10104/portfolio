@@ -16,6 +16,10 @@
 }
 
 @layer base {
+  html {
+    line-height: normal; /* legacy page used the browser default, not Tailwind's 1.5 */
+  }
+
   html,
   body {
     background: var(--bg);
