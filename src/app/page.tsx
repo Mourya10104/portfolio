@@ -4,6 +4,7 @@ import SmoothScroll from "@/components/SmoothScroll";
 import Topbar from "@/components/Topbar";
 import Hero from "@/components/sections/Hero";
 import Experience from "@/components/sections/Experience";
+import Projects from "@/components/sections/Projects";
 import Marquee from "@/components/sections/Marquee";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
         <Hero />
         <Marquee />
         <Experience />
+        <Projects />
       </main>
     </>
   );
